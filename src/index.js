@@ -7,6 +7,8 @@ import configureStore from './store';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
+import './index.css';
+
 import reducer from './reducers';
 
 const supportsHistory = 'pushState' in window.history; // is true for browsers that support the HTML5 history API
