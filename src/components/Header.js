@@ -11,7 +11,7 @@ class Header extends Component {
             <Link className="navbar-brand" to="/">
               <span className="brand">6061</span>
             </Link>
-            <Nav className="mr-auto">
+            <Nav className="mr-xl-auto">
               <Link className="nav-link" to="/">
                 Главная
               </Link>
