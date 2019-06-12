@@ -8,7 +8,7 @@ function Header() {
         <Navbar expand="lg" bg="dark" variant="dark">
           <Container>
             <Link className="navbar-brand" to="/">
-              <span className="brand">6061</span>
+              <span className="brand medium">6061</span>
             </Link>
             <Nav className="mr-auto">
               <Link className="nav-link" to="/">

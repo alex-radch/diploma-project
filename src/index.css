@@ -22,3 +22,12 @@ footer {
   background-color: #010101;
   color: #fff;
 }
+
+.brand {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+span.medium {
+  font-size: 2rem;
+  line-height: 2rem;
+}
