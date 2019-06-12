@@ -10,7 +10,7 @@ function Header() {
             <Link className="navbar-brand" to="/">
               <span className="brand medium">6061</span>
             </Link>
-            <Nav className="mr-auto">
+            <Nav className="mr-xl-auto">
               <Link className="nav-link" to="/">
                 Home
               </Link>
