@@ -1,9 +1,8 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-class Header extends Component {
-  render() {
+function Header() {
     return (
       <header>
         <Navbar expand="lg" bg="dark" variant="dark">
@@ -13,20 +12,19 @@ class Header extends Component {
             </Link>
             <Nav className="mr-auto">
               <Link className="nav-link" to="/">
-                Главная
+                Home
               </Link>
               <Link className="nav-link" to="/products">
-                Товары
+                Products
               </Link>
-              <Link className="nav-link" to="/about">
-                О нас
+              <Link className="nav-link" to="/contacts">
+                Contact
               </Link>
             </Nav>
           </Container>
         </Navbar>
       </header>
     );
-  }
 }
 
 export default Header;
