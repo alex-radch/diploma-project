@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="page-footer font-small blue">
       <div className="footer-copyright text-center py-3">
-        © {new Date().getFullYear()}
+        6061 © 2016-{new Date().getFullYear()}
       </div>
     </footer>
   );
