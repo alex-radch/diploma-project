@@ -1,16 +1,19 @@
-import React, { Fragment } from 'react';
-import Product from '../Product';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import ProductList from '../ProductList';
 
-function Products() {
-  return (
-    <Fragment>
-      <Product
-        img={'img/outer1.jpg'}
-        title={'13 дюймов Обод'}
-        cost={'2000 руб.'}
-      />
-    </Fragment>
-  );
+class Products extends Component {
+  render() {
+    return (
+        <ProductList items={this.props.items} />
+    );
+  }
 }
 
-export default Products;
+const mapStateToProps = (state) => {
+  return {
+    items: state.products
+  }
+};
+
+export default connect(mapStateToProps)(Products);

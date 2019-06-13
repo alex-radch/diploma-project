@@ -1,13 +1,13 @@
-import React, { Component, Fragment } from 'react';
-import { Card, Button } from 'react-bootstrap';
+import React from 'react';
+import { Card } from 'react-bootstrap';
 
-function Product(props) {
+function Product({ item }) {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.img} />
+    <Card style={{ width: '18rem', marginBottom: '2rem' }}>
+      <Card.Img variant="top" src={item.src} />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>{props.cost}</Card.Text>
+        <Card.Title>{item.title}</Card.Title>
+        <Card.Text>Price {item.cost}$</Card.Text>
       </Card.Body>
     </Card>
   );

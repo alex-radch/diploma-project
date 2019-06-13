@@ -12,7 +12,7 @@ function Main() {
         <Container>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/products" component={Products} />
+            <Route path="/products" render={() => <Products />} />
             <Route path="/contacts" component={Contacts} />
             <Redirect from="*" to="/" />
           </Switch>

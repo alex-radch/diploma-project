@@ -4,10 +4,6 @@ body {
   font-family: 'Roboto';
 }
 
-.dropdown-divider {
-  margin: 40px 0;
-}
-
 #root {
   display: flex;
   flex-direction: column;
@@ -69,4 +65,9 @@ span.medium {
 .navbar-nav .nav-link {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
 }

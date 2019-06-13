@@ -6,6 +6,7 @@ import { createBrowserHistory } from 'history';
 import configureStore from './store';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import { asyncFetchProducts } from './api/products';
 
 import './index.css';
 
@@ -18,6 +19,7 @@ const browserHistory = createBrowserHistory({
 });
 
 const store = configureStore(browserHistory, reducer);
+store.dispatch(asyncFetchProducts());
 
 ReactDOM.render(
   <Provider store={store}>
