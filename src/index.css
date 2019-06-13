@@ -1,2 +1,72 @@
-span.brand {
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto';
+}
+
+.dropdown-divider {
+  margin: 40px 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+footer {
+  flex: 0 0 auto;
+  width: 100%;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.brand {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+
+span.medium {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-container > div.row {
+  max-width: 792px;
+}
+
+.home-container div.col-12 {
+  margin-bottom: 2rem;
+}
+
+.home-container p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 792px) {
+  .home-container {
+    flex-direction: column-reverse;
+  }
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
